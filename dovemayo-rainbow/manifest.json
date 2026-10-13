@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Dovemayo Infinite Rainbow",
+  "version": "1.0.0",
+  "description": "dovemayo.com 스네이크 게임의 무지개 효과를 무한 지속합니다. (R키로 ON/OFF)",
+  "content_scripts": [
+    {
+      "matches": ["https://dovemayo.com/*", "https://www.dovemayo.com/*"],
+      "js": ["rainbow.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ]
+}
